@@ -26,7 +26,7 @@ A div element with the class calculator which acts as the main container.
 A div with the class display to show the entered numbers and results.
 A grid of buttons representing digits, arithmetic operators, and special functions like C (Clear) and DEL (Delete).
 2. CSS (style.css)
-The design of the calculator is handled by CSS:
+# The design of the calculator is handled by CSS:
 
 The calculator container is centered in the viewport using Flexbox.
 The buttons are arranged using CSS Grid to create a clean and organized layout.
@@ -34,8 +34,8 @@ Custom styles are applied for hover effects, and specific buttons (like = and C)
 3. JavaScript (script.js)
 The logic behind the calculator's functionality is implemented in JavaScript:
 
-appendNumber(): Adds a digit to the current expression displayed.
-appendSymbol(): Adds arithmetic operators or a decimal point.
-clearDisplay(): Resets the calculator display to its initial state.
-deleteDigit(): Deletes the last entered digit or symbol from the current expression.
-calculate(): Evaluates the expression entered using the eval() function, and displays the result. If an error occurs, an "Error" message is shown.
+**appendNumber()**: Adds a digit to the current expression displayed.
+**appendSymbol()**: Adds arithmetic operators or a decimal point.
+**clearDisplay()**: Resets the calculator display to its initial state.
+**deleteDigit()**: Deletes the last entered digit or symbol from the current expression.
+**calculate()**: Evaluates the expression entered using the eval() function, and displays the result. If an error occurs, an "Error" message is shown.
