@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+          <button class="btn" onclick="clearDisplay()">C</button>
+          <button class="btn" onclick="deleteDigit()">DEL</button>
+          <button class="btn" onclick="appendSymbol('/')">/</button>
+          <button class="btn" onclick="appendNumber(7)">7</button>
+          <button class="btn" onclick="appendNumber(8)">8</button>
+          <button class="btn" onclick="appendNumber(9)">9</button>
+          <button class="btn" onclick="appendSymbol('*')">*</button>
+          <button class="btn" onclick="appendNumber(4)">4</button>
+          <button class="btn" onclick="appendNumber(5)">5</button>
+          <button class="btn" onclick="appendNumber(6)">6</button>
+          <button class="btn" onclick="appendSymbol('-')">-</button>
+          <button class="btn" onclick="appendNumber(1)">1</button>
+          <button class="btn" onclick="appendNumber(2)">2</button>
+          <button class="btn" onclick="appendNumber(3)">3</button>
+          <button class="btn" onclick="appendSymbol('+')">+</button>
+          <button class="btn zero" onclick="appendNumber(0)">0</button>
+          <button class="btn" onclick="appendSymbol('.')">.</button>
+          <button class="btn equal" onclick="calculate()">=</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f05d;
+}
+
+.calculator {
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  min-height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #bbb;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.equal {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.equal:hover {
+  background-color: #45a049;
+}
+    </style>
+    <script>
+        let display = document.getElementById('display');
+let currentValue = '';
+
+function appendNumber(number) {
+  currentValue += number;
+  display.innerText = currentValue;
+}
+
+function appendSymbol(symbol) {
+  currentValue += symbol;
+  display.innerText = currentValue;
+}
+
+function clearDisplay() {
+  currentValue = '';
+  display.innerText = '0';
+}
+
+function deleteDigit() {
+  currentValue = currentValue.slice(0, -1);
+  if (currentValue === '') {
+    display.innerText = '0';
+  } else {
+    display.innerText = currentValue;
+  }
+}
+
+function calculate() {
+  try {
+    currentValue = eval(currentValue).toString();
+    display.innerText = currentValue;
+  } catch (error) {
+    display.innerText = 'Error';
+  }
+}
+    </script>
+</html>
