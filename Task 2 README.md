@@ -19,19 +19,19 @@ The calculator provides a simple user interface (UI) with buttons for entering n
 - **style.css**: The CSS file that styles the layout and appearance of the calculator.
 - **script.js**: The JavaScript file that handles the logic and functionality of the calculator, such as updating the display, clearing inputs, deleting digits, and evaluating expressions.
   # Code Explanation
-1. HTML (index.html)
+1. **HTML (index.html)**
 The structure of the calculator is defined using HTML. It includes:
 
 A div element with the class calculator which acts as the main container.
 A div with the class display to show the entered numbers and results.
 A grid of buttons representing digits, arithmetic operators, and special functions like C (Clear) and DEL (Delete).
-2. CSS (style.css)
+2. **CSS (style.css)**
 # The design of the calculator is handled by CSS:
 
 The calculator container is centered in the viewport using Flexbox.
 The buttons are arranged using CSS Grid to create a clean and organized layout.
 Custom styles are applied for hover effects, and specific buttons (like = and C) have distinct colors for better usability.
-3. JavaScript (script.js)
+3. **JavaScript (script.js)**
 The logic behind the calculator's functionality is implemented in JavaScript:
 
 **appendNumber()**: Adds a digit to the current expression displayed.
