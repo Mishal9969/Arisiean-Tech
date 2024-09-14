@@ -12,3 +12,16 @@ This is a Tic-Tac-Toe web application built using HTML, CSS, and JavaScript. It 
 **HTML**: Used for structuring the game interface.
 **CSS**: Used for styling the game board and creating a visually appealing layout.
 **JavaScript**: Handles the game logic, user interactions, and winning conditions.
+
+## How to Play
+Player 1 (X) starts by clicking on any cell in the grid.
+Player 2 (O) takes the next turn by clicking on an empty cell.
+The game will automatically check for a win or a draw after each move.
+Once a player wins or the game ends in a draw, the result will be displayed, and players can restart the game by clicking the "Restart Game" button.
+## Future Enhancements
+**AI Opponent**: Implement a feature that allows users to play against an AI opponent.
+**Difficulty Levels**: Add difficulty levels for AI, such as easy, medium, and hard.
+**Animations**: Introduce animations for player turns and game outcomes (win/draw).
+**Sound Effects**: Add sound effects to enhance the user experience.
+**Scoreboard**: Keep track of wins and draws across multiple rounds.
+
