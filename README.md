@@ -16,14 +16,14 @@ This is a simple image gallery web application built using **HTML**, **CSS**, an
 - Basic understanding of HTML, CSS, and JavaScript.
 
 
-image-gallery 
+## image-gallery 
 
-index.html:         Main HTML file.
- styles.css:         Stylesheet for the gallery layout and design.
- script.js:          JavaScript file for interactivity.
- img:               Folder containing gallery images.
+**index.html**:         Main HTML file.
+ **styles.css**:         Stylesheet for the gallery layout and design.
+ **script.js**:          JavaScript file for interactivity.
+ **img**:               Folder containing gallery images.
    img1.jpg:
     img2.jpg:
-   ...           # Add your own images here.
- README.md:         # Project documentation.
+   ...            Add your own images here.
+ **README.md**:         # Project documentation.
 
