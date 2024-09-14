@@ -1,24 +1,24 @@
-Simple Calculator Project
-Overview
+# Simple Calculator Project
+# Overview
 This is a basic calculator project built using HTML, CSS, and JavaScript. The calculator can perform the following basic arithmetic operations:
 
-Addition
-Subtraction
-Multiplication
-Division
+**Addition**
+**Subtraction**
+**Multiplication**
+**Division**
 The calculator provides a simple user interface (UI) with buttons for entering numbers and operators, as well as a display screen that shows the result of the calculations.
 
-Features:
-Responsive design: The calculator adapts to different screen sizes.
-Clear button: A C button that resets the display and clears the current calculation.
-Delete button: A DEL button that removes the last digit or operator entered.
-Error handling: Displays "Error" if an invalid operation (e.g., division by zero) is attempted.
-Basic functionalities: Includes buttons for all digits (0-9), arithmetic operations (+, -, *, /), decimal point (.), and an equals (=) button to evaluate the expression.
-Files
-index.html: The main HTML file that defines the structure of the calculator.
-style.css: The CSS file that styles the layout and appearance of the calculator.
-script.js: The JavaScript file that handles the logic and functionality of the calculator, such as updating the display, clearing inputs, deleting digits, and evaluating expressions.
-Code Explanation
+# Features:
+- **Responsive design**: The calculator adapts to different screen sizes.
+- **Clear button**: A C button that resets the display and clears the current calculation.
+- **Delete button**: A DEL button that removes the last digit or operator entered.
+- **Error handling**: Displays "Error" if an invalid operation (e.g., division by zero) is attempted.
+- **Basic functionalities**: Includes buttons for all digits (0-9), arithmetic operations (+, -, *, /), decimal point (.), and an equals (=) button to evaluate the expression.
+## Files
+- **index.html**: The main HTML file that defines the structure of the calculator.
+- **style.css**: The CSS file that styles the layout and appearance of the calculator.
+- **script.js**: The JavaScript file that handles the logic and functionality of the calculator, such as updating the display, clearing inputs, deleting digits, and evaluating expressions.
+  # Code Explanation
 1. HTML (index.html)
 The structure of the calculator is defined using HTML. It includes:
 
